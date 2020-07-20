@@ -1,6 +1,5 @@
 from SCNN import SCNN
 import numpy as np
-from tensorflow.keras.models import load_model, save_model
 import cv2
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -33,10 +32,10 @@ scnn = SCNN()
 # scnn.load()
 # scnn.train(epochs=10, steps_per_epoch=500, batch_size=4)
 # scnn.save()
-scnn.load()
-score = scnn.BatchEvaluate(batch_size=50)
-print('Test score:', score[0])
-print('Test accuracy:', score[1])
+# scnn.load()
+# score = scnn.BatchEvaluate(batch_size=50)
+# print('Test score:', score[0])
+# print('Test accuracy:', score[1])
 # rtnet.load()
 # start = time.time()
 # for flag in range(500):
